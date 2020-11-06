@@ -1,0 +1,15 @@
+#define UMBRAL 40
+#define MIC SENSOR_2
+task main()
+{
+     SetSensorSound(IN_2);
+     while(true)
+     {
+                until(MIC > UMBRAL);
+                OnFwd(OUT_BC, 75);
+                Wait(300);
+                until(MIC > UMBRAL);
+                Off(OUT_BC);
+                Wait(300);
+     }
+}

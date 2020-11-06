@@ -1,0 +1,15 @@
+#define TIEMPO_GIRO 360
+int TIEMPO_MOVIMIENTO; // define una variable
+task main()
+{
+     TIEMPO_MOVIMIENTO = 200; // asigna el valor inicial
+     repeat(50)
+     {
+               OnFwd(OUT_BC, 75);
+               Wait(TIEMPO_MOVIMIENTO);
+               OnRev(OUT_C, 75);
+               Wait(TIEMPO_GIRO);
+               TIEMPO_MOVIMIENTO += 200; // incrementa la variable
+     }
+     Off(OUT_BC);
+}

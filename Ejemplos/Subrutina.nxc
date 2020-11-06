@@ -1,0 +1,33 @@
+//Subrutina
+sub girando(int potencia)
+{
+    OnRev(OUT_C, potencia); Wait(900);
+    OnFwd(OUT_BC, potencia);
+}
+
+//Define una MACRO que haria el mismo papel que la subrutina
+/*
+#define girando \
+OnRev(OUT_C, 75); Wait(3400);OnFwd(OUT_BC, 75);
+*/
+
+/*
+//Subrutina inline
+sub girando(int potencia)
+{
+    OnRev(OUT_C, potencia); Wait(900);
+    OnFwd(OUT_BC, potencia);
+}
+*/
+
+task main()
+{
+     OnFwd(OUT_BC, 75);
+     Wait(1000);
+     girando(75);
+     Wait(2000);
+     girando(75);
+     Wait(1000);
+     girando(75);
+     Off(OUT_BC);
+}

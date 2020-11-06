@@ -1,0 +1,18 @@
+int TIEMPO_MOVIMIENTO, TIEMPO_GIRO, tiempo_total;
+task main()
+{
+     tiempo_total = 0;
+     do
+     {
+                  TIEMPO_MOVIMIENTO = Random(1000);
+                  TIEMPO_GIRO = Random(1000);
+                  OnFwd(OUT_BC, 75);
+                  Wait(TIEMPO_MOVIMIENTO);
+                  OnRev(OUT_C, 75);
+                  Wait(TIEMPO_GIRO);
+                  tiempo_total += TIEMPO_MOVIMIENTO;
+                  tiempo_total += TIEMPO_GIRO;
+     }
+     while (tiempo_total < 20000);
+     Off(OUT_BC);
+}

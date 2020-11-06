@@ -1,0 +1,274 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0SetSensorLight_inline_main	6	1	0	4	3
+1	__DU0main	5	1	4	4	4
+2	__D0main	6	1	8	4	19
+3	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	12	4	4
+4	__signed_stack_001main	6	1	16	4	8
+5	__DU0SetSensorLight_inline_main	5	1	20	4	2
+6	__main_7qG2_num_7qG2_000	4	1	24	2	6
+7	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main	1	1	26	1	2
+8	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	27	1	2
+9	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	28	1	2
+10	____initialize_global_data_return	1	1	29	1	3
+11	__SetSensorLight_7qG2_port_7qG2_000_inline_main	1	1	30	1	4
+12	__SetSensorLight_7qG2_bActive_7qG2_000_inline_main	1	1	31	1	2
+13	__constVal96	2	0	32	1	8
+14	__constVal63	2	0	33	1	8
+15	__constVal30	2	0	34	1	2
+16	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main	1	1	35	1	2
+17	__main_7qG2_intento_ambos_lados_7qG2_000	1	1	36	1	4
+18	__main_7qG2_tiramos_la_toalla_7qG2_000	1	1	37	1	3
+19	__OnRev_Tmp	2	1	38	1	4
+20	____ResetSensorSubroutine_return	1	1	39	1	3
+21	__constVal2	2	0	40	1	6
+22	__constVal20	2	0	41	1	1
+23	__constVal5	2	0	42	1	1
+24	__ResetSensorPort	1	1	43	1	3
+25	__ResetSensorTmp	1	1	44	1	2
+26	__PFTmp	1	1	45	1	1
+27	__constVal1	2	0	46	1	5
+28	__constVal32	2	0	47	1	22
+29	__zfSetSensorLight_inline_main	1	1	48	1	2
+30	__constVal3	2	0	49	1	6
+31	__constVal0	2	1	50	1	29
+32	__zfmain	1	1	51	1	15
+33	__OUT_BC	7	0	52	4	4
+34	__OUT_BC.__OUT_BC_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	12	0	#line 12 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	13	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	12	2	#line 12 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	12	2	#line 12 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	13	2		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 2
+0	12	5	#line 12 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	13	5	#line 13 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	14	5		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	3729	7	#line 3729 "NXCDefs.h"
+0	3730	7		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3729	9	#line 3729 "NXCDefs.h"
+0	3729	9	#line 3729 "NXCDefs.h"
+0	3730	9		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	3729	11	#line 3729 "NXCDefs.h"
+0	3730	11		tst 5, __zfSetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	3729	14	#line 3729 "NXCDefs.h"
+0	3730	14		brtst 4, __001__NXC_Label_4, __zfSetSensorLight_inline_main
+0	3729	17	#line 3729 "NXCDefs.h"
+0	3730	17		set __D0SetSensorLight_inline_main, 5
+0	3729	20	#line 3729 "NXCDefs.h"
+0	3730	20		jmp __001__NXC_Label_5
+0	3729	22	#line 3729 "NXCDefs.h"
+0	3730	22		set __D0SetSensorLight_inline_main, 6
+0	3729	25	#line 3729 "NXCDefs.h"
+0	3730	25		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __D0SetSensorLight_inline_main
+0	3663	27	#line 3663 "NXCDefs.h"
+0	3664	27		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	3663	31	#line 3663 "NXCDefs.h"
+0	3730	31	#line 3730 "NXCDefs.h"
+0	3730	31	#line 3730 "NXCDefs.h"
+0	3731	31		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3730	33	#line 3730 "NXCDefs.h"
+0	3730	33	#line 3730 "NXCDefs.h"
+0	3731	33		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	3730	36	#line 3730 "NXCDefs.h"
+0	3676	36	#line 3676 "NXCDefs.h"
+0	3677	36		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	3676	40	#line 3676 "NXCDefs.h"
+0	3731	40	#line 3731 "NXCDefs.h"
+0	3731	40	#line 3731 "NXCDefs.h"
+0	3731	40	#line 3731 "NXCDefs.h"
+0	3694	40	#line 3694 "NXCDefs.h"
+0	3695	40	#pragma macro 4
+0	3695	40		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3695	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	3655	44	#line 3655 "NXCDefs.h"
+0	3694	44	#line 3694 "NXCDefs.h"
+0	3732	44	#line 3732 "NXCDefs.h"
+0	13	44	#line 13 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	14	44	#line 14 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	15	44		set __main_7qG2_num_7qG2_000, 0
+0	14	47	#line 14 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	15	47	#line 15 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	16	47		set __main_7qG2_intento_ambos_lados_7qG2_000, 0
+0	15	50	#line 15 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	18	50	#line 18 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	19	50		set __main_7qG2_tiramos_la_toalla_7qG2_000, 0
+0	18	53	#line 18 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	18	53	#line 18 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	19	53		set __D0main, 50
+0	19	56	#line 19 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	20	56	#pragma macro 7
+0	20	56		setout __OUT_BC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3694	79	#line 3694 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	19	79	#line 19 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	20	79	#line 20 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	21	79		set __D0main, 1
+0	22	82	#line 22 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	23	82		tst 5, __zfmain, __D0main
+0	22	85	#line 22 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	23	85		brtst 4, __NXC_Label_500, __zfmain
+0	22	88	#line 22 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	23	88		getin __signed_stack_001main, __constVal2, 4
+0	22	92	#line 22 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	23	92	#line 23 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	24	92		set __D0main, 60
+0	23	95	#line 23 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	24	95		cmp 1, __zfmain, __signed_stack_001main, __D0main
+0	23	99	#line 23 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	24	99		mov __D0main, __zfmain
+0	24	101	#line 24 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	25	101		brtst 4, __NXC_Label_505, __zfmain
+0	26	104	#line 26 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	27	104	#pragma macro 7
+0	27	104		setout __OUT_BC, 2, __constVal0, 1, __constVal2, 8, __constVal0, 6, __constVal0, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3720	127	#line 3720 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	26	127	#line 26 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	26	127	#line 26 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	27	127		set __D0main, 30
+0	27	130	#line 27 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	28	130	#pragma macro 7
+0	28	130		setout __constVal1, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3727	153	#line 3727 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	27	153	#line 27 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	27	153	#line 27 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	28	153	#line 28 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	29	153	#pragma macro 10
+0	29	153		neg __OnRev_Tmp, __constVal30
+0	29	156		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3734	179	#line 3734 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	28	179	#line 28 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	28	179	#line 28 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	29	179		set __Wait_7qG2_ms_7qG2_000_inline_main, 100
+0	28	182	#line 28 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	7921	182	#line 7921 "NXCDefs.h"
+0	7922	182		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	185	#line 7921 "NXCDefs.h"
+0	30	185	#line 30 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	30	185	#line 30 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	31	185		getin __signed_stack_001main, __constVal2, 4
+0	30	189	#line 30 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	31	189	#line 31 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	32	189		set __D0main, 60
+0	31	192	#line 31 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	32	192		cmp 1, __zfmain, __signed_stack_001main, __D0main
+0	31	196	#line 31 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	32	196		mov __D0main, __zfmain
+0	33	198	#line 33 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	34	198		brtst 4, __NXC_Label_513, __zfmain
+0	34	201	#line 34 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	35	201		add __main_7qG2_num_7qG2_000, __main_7qG2_num_7qG2_000, __constVal1
+0	34	205	#line 34 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	34	205	#line 34 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	35	205		set __Wait_7qG2_ms_7qG2_000_inline_main, 100
+0	34	208	#line 34 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	7921	208	#line 7921 "NXCDefs.h"
+0	7922	208		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	211	#line 7921 "NXCDefs.h"
+0	36	211	#line 36 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	36	211	#line 36 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	37	211		mov __signed_stack_001main, __main_7qG2_num_7qG2_000
+0	36	213	#line 36 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	37	213	#line 37 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	38	213		set __D0main, 20
+0	37	216	#line 37 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	38	216		cmp 1, __zfmain, __signed_stack_001main, __D0main
+0	37	220	#line 37 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	38	220		mov __D0main, __zfmain
+0	38	222	#line 38 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	39	222		brtst 4, __NXC_Label_520, __zfmain
+0	40	225	#line 40 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	41	225	#pragma macro 7
+0	41	225		setout __OUT_BC, 2, __constVal0, 1, __constVal2, 8, __constVal0, 6, __constVal0, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3793	248	#line 3793 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	40	248	#line 40 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	41	248	#line 41 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	42	248		mov __DU0main, __main_7qG2_intento_ambos_lados_7qG2_000
+0	42	250	#line 42 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	43	250		tst 5, __zfmain, __DU0main
+0	42	253	#line 42 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	43	253		brtst 4, __NXC_Label_523, __zfmain
+0	43	256	#line 43 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	44	256		jmp __NXC_Label_513
+0	43	258	#line 43 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	44	258	#line 44 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	45	258		set __main_7qG2_tiramos_la_toalla_7qG2_000, 1
+0	44	261	#line 44 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	44	261	#line 44 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	47	261	#line 47 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	48	261		jmp __NXC_Label_526
+0	48	263	#line 48 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	49	263		set __main_7qG2_intento_ambos_lados_7qG2_000, 1
+0	48	266	#line 48 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	48	266	#line 48 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	48	266	#line 48 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	48	266	#line 48 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	48	266	#line 48 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	48	266	#line 48 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	49	266		sub __signed_stack_001main, __constVal0, __constVal20
+0	48	270	#line 48 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	49	270	#line 49 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	49	270	#line 49 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	50	270		sub __main_7qG2_num_7qG2_000, __signed_stack_001main, __constVal5
+0	49	274	#line 49 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	49	274	#line 49 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	49	274	#line 49 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	50	274	#line 50 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	51	274	#pragma macro 10
+0	51	274		neg __OnRev_Tmp, __constVal30
+0	51	277		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3847	300	#line 3847 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	50	300	#line 50 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	50	300	#line 50 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	51	300		set __D0main, 30
+0	51	303	#line 51 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	52	303	#pragma macro 7
+0	52	303		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3854	326	#line 3854 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	51	326	#line 51 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	53	326	#line 53 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	55	326	#line 55 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	55	326	#line 55 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	56	326		jmp __NXC_Label_512
+0	55	328	#line 55 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	55	328	#line 55 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	56	328		mov __DU0main, __main_7qG2_tiramos_la_toalla_7qG2_000
+0	55	330	#line 55 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	56	330		tst 5, __zfmain, __DU0main
+0	55	333	#line 55 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	56	333		brtst 4, __NXC_Label_537, __zfmain
+0	58	336	#line 58 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	59	336		jmp __NXC_Label_500
+0	58	338	#line 58 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	58	338	#line 58 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	59	338	#line 59 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	60	338		set __main_7qG2_num_7qG2_000, 0
+0	59	341	#line 59 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	59	341	#line 59 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	60	341	#line 60 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	61	341		set __main_7qG2_intento_ambos_lados_7qG2_000, 0
+0	60	344	#line 60 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	60	344	#line 60 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	60	344	#line 60 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	61	344		set __D0main, 50
+0	61	347	#line 61 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	62	347	#pragma macro 7
+0	62	347		setout __OUT_BC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3896	370	#line 3896 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	61	370	#line 61 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	63	370	#line 63 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	65	370	#line 65 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	66	370		jmp __NXC_Label_499
+0	65	372	#line 65 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+0	66	372		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	66	0	#line 66 "C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc"
+2	67	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc
+1	__ResetSensorSubroutine	375	NXTDefs.h
+2	__initialize_global_data	388	C:\Users\Eugenio\Dropbox\Mindstorms\Programas\Light.nxc

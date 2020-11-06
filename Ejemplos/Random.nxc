@@ -1,0 +1,19 @@
+#define TIEMPO_MOVIMIENTO 500
+#define TIEMPO_GIRO 360
+task main()
+{
+     while(true)
+     {
+                OnFwd(OUT_BC, 75);
+                Wait(TIEMPO_MOVIMIENTO);
+                if (Random() >= 0)
+                {
+                             OnRev(OUT_C, 75);
+                }
+                else
+                {
+                             OnRev(OUT_B, 75);
+                }
+                Wait(TIEMPO_GIRO);
+     }
+}

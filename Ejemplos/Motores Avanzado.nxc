@@ -1,0 +1,57 @@
+task main()
+{
+     OnFwd(OUT_BC, 75);
+     Wait(500);
+     //Frena
+     Off(OUT_BC);
+     Wait(1000);
+     OnFwd(OUT_BC, 75);
+     Wait(500);
+     //Para de forma suave - simplemente corta el flujo electrico
+     Float(OUT_BC);
+     
+     //Mueve sin usar un PID
+     //OnRevReg tambien funciona igual
+     OnFwdReg(OUT_BC,50,OUT_REGMODE_IDLE);
+     Wait(2000);
+     Off(OUT_BC);
+     PlayTone(4000,50);
+     Wait(1000);
+     ResetTachoCount(OUT_BC);
+     //Mueve usando un PID que regula la velocidad - si paramos una rueda, dara mas potencia para asegurar que la velocidad se mantenga igual a la especificada
+     OnFwdReg(OUT_BC,50,OUT_REGMODE_SPEED);
+     Wait(2000);
+     Off(OUT_BC);
+     PlayTone(4000,50);
+     Wait(1000);
+     //Mueve usando un PID que regula que ambos motores se muevan igual - si paramos una rueda, frenara tambien la otra
+     OnFwdReg(OUT_BC,50,OUT_REGMODE_SYNC);
+     Wait(2000);
+     Off(OUT_BC);
+     
+     //Mueve a una velocidad un porcentaje de giro (-100 a +100)
+     OnFwdSync(OUT_BC,50,0);
+     Wait(1000);
+     PlayTone(5000,30);
+     OnFwdSync(OUT_BC,50,20);
+     Wait(1000);
+     PlayTone(5000,30);
+     OnFwdSync(OUT_BC,50,-40);
+     Wait(1000);
+     PlayTone(5000,30);
+     OnRevSync(OUT_BC,50,90);
+     Wait(1000);
+     Off(OUT_BC);
+     
+     //Gira un motor un numero de grados
+     RotateMotor(OUT_BC, 50,360);
+     RotateMotor(OUT_C, 50,-360);
+
+     //Una extension de la anterior. Gira un motor un numero de grados,
+     RotateMotorEx(OUT_AC, 50, 360, 0,
+     //Mantener los motores sincronizados
+     true,
+     //detener el motor despues de hacer el giro
+     true);
+
+     }

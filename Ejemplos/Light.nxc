@@ -1,0 +1,64 @@
+#define UMBRAL 60
+#define MAX 20
+#define vel 50
+#define vel_giro 30
+
+task main()
+{
+     //Con led apagado
+     /*SetSensorType(IN_3,IN_TYPE_LIGHT_INACTIVE);
+     SetSensorMode(IN_3,IN_MODE_PCTFULLSCALE);
+     ResetSensor(IN_3);
+     */
+     SetSensorLight(IN_3);
+     int num=0;
+     bool intento_ambos_lados=false;
+     bool tiramos_la_toalla=false;
+     
+     //Avanza
+     OnFwd(OUT_BC, vel);
+     while (true)
+     {
+           //Si se sale...
+           if (Sensor(IN_3) > UMBRAL)
+           {
+                    Float(OUT_BC);
+                    //Gira hacia la izquierda...
+                    OnFwd(OUT_B, vel_giro);
+                    OnRev(OUT_C, vel_giro);
+                    Wait(100);
+                    // ...hasta que encuentre la linea
+                    while(Sensor(IN_3) > UMBRAL)
+                    {
+                        //Mientras no encuentra la linea sigue girando
+                        num++;
+                        Wait(100);
+                        //Si llevamos mucho rato girando, vamos a cambiar la direccion de giro
+                        if (num> MAX)
+                        {
+                             Float(OUT_BC);
+                             //Si ya habiamos buscado a ambos lados, tiramos la toalla
+                             if(intento_ambos_lados)
+                             {
+                                 break;
+                                 tiramos_la_toalla=true;
+                             }
+                             else
+                             {
+                                  intento_ambos_lados=true;
+                                  num=-MAX-5;
+                                  OnRev(OUT_B, vel_giro);
+                                  OnFwd(OUT_C, vel_giro);
+                             }
+                        }
+                    }
+                    //Si hemos tirado la toalla, terminamos
+                    if(tiramos_la_toalla) break;
+                    
+                    //Seguimos avanzando
+                    num=0;
+                    intento_ambos_lados=false;
+                    OnFwd(OUT_BC, vel);
+           }
+     }
+}

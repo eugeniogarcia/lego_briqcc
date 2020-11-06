@@ -1,0 +1,83 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0main	6	1	0	4	2
+1	__signed_stack_001main	6	1	4	4	4
+2	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	8	4	4
+3	TIEMPO_MOVIMIENTO	4	1	12	2	4
+4	__constVal200	4	0	14	2	1
+5	__constVal63	2	0	16	1	3
+6	__constVal96	2	0	17	1	3
+7	____initialize_global_data_return	1	1	18	1	3
+8	__constVal75	2	0	19	1	1
+9	__constVal1	2	0	20	1	1
+10	__constVal32	2	0	21	1	9
+11	__OnRev_Tmp	2	1	22	1	2
+12	__constVal0	2	1	23	1	10
+13	__PFTmp	1	1	24	1	1
+14	__constVal2	2	0	25	1	1
+15	__constVal3	2	0	26	1	3
+16	__OUT_BC	7	0	28	4	2
+17	__OUT_BC.__OUT_BC_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	4	0	#line 4 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	5	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	4	2	#line 4 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	5	2	#line 5 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	6	2		set TIEMPO_MOVIMIENTO, 200
+0	5	5	#line 5 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	5	5	#line 5 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	6	5	#line 6 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	7	5		set __signed_stack_001main, 50
+0	7	8	#line 7 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	7	8	#line 7 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	8	8		sub __signed_stack_001main, __signed_stack_001main, __constVal1
+0	7	12	#line 7 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	8	12		brtst 0, __NXC_Label_492, __signed_stack_001main
+0	7	15	#line 7 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	8	15		set __D0main, 75
+0	8	18	#line 8 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	9	18	#pragma macro 7
+0	9	18		setout __OUT_BC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3549	41	#line 3549 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	8	41	#line 8 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	8	41	#line 8 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	9	41		mov __Wait_7qG2_ms_7qG2_000_inline_main, TIEMPO_MOVIMIENTO
+0	8	43	#line 8 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	7921	43	#line 7921 "NXCDefs.h"
+0	7922	43		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	46	#line 7921 "NXCDefs.h"
+0	9	46	#line 9 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	9	46	#line 9 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	10	46	#line 10 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	11	46	#pragma macro 10
+0	11	46		neg __OnRev_Tmp, __constVal75
+0	11	49		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3570	72	#line 3570 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	10	72	#line 10 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	10	72	#line 10 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	11	72		set __Wait_7qG2_ms_7qG2_000_inline_main, 360
+0	10	75	#line 10 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	7921	75	#line 7921 "NXCDefs.h"
+0	7922	75		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	78	#line 7921 "NXCDefs.h"
+0	11	78	#line 11 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	12	78	#line 12 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	12	78	#line 12 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	13	78		add TIEMPO_MOVIMIENTO, TIEMPO_MOVIMIENTO, __constVal200
+0	12	82	#line 12 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	13	82	#line 13 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	14	82		jmp __NXC_Label_491
+0	13	84	#line 13 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	14	84	#line 14 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	15	84	#pragma macro 7
+0	15	84		setout __OUT_BC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3594	107	#line 3594 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	14	107	#line 14 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+0	15	107		exit -1, -1
+1	17	0	#line 17 "C:\Users\Eugenio\Desktop\Espiral.nxc"
+1	18	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Eugenio\Desktop\Espiral.nxc
+1	__initialize_global_data	110	C:\Users\Eugenio\Desktop\Espiral.nxc

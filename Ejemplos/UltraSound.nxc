@@ -1,0 +1,13 @@
+#define CERCA 15 //cm
+task main()
+{
+     SetSensorLowspeed(IN_4);
+     while(true)
+     {
+                OnFwd(OUT_BC,50);
+                while(SensorUS(IN_4)> CERCA);
+                Off(OUT_BC);
+                OnRev(OUT_C,100);
+                Wait(800);
+     }
+}
